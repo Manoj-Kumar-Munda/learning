@@ -34,6 +34,8 @@ jobs:
             cat <<EOF > .env
             SECRET=${{ secrets.SECRET }}
             PORT=${{ secrets.PORT }}
+            EOF
+
             docker compose down
             docker compose up -d --build
           
