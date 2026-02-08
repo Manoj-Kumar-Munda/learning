@@ -29,6 +29,11 @@ jobs:
           script: |
             cd /root/learning
             git pull
+
+            # create .env file on vps
+            cat <<EOF > .env
+            SECRET=${{ secrets.SECRET }}
+            PORT=${{ secrets.PORT }}
             docker compose down
             docker compose up -d --build
           
