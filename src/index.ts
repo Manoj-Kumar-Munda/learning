@@ -12,7 +12,7 @@ app.get("/products", (req, res) => {
   res.send("Get all products");
 });
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello World v2!");
 });
 
 app.listen(port, () => {
