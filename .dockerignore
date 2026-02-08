@@ -1,0 +1,30 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# environment variables
+.env
+.env.local
+.env.production
+
+# git
+.git
+.gitignore
+
+# docker
+Dockerfile
+docker-compose.yml
+
+# OS / editor junk
+.DS_Store
+.vscode
+.idea
+
+# build artifacts (if any)
+dist
+build
+coverage
